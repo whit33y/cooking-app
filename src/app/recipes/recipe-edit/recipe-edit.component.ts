@@ -58,7 +58,9 @@ export class RecipeEditComponent {
       })
     );
   }
-
+  onDeleteIngredient(index: number) {
+    (<FormArray>this.recipeForm.get('ingredients')).removeAt(index);
+  }
   get controls() {
     return (<FormArray>this.recipeForm.get('ingredients')).controls;
   }
