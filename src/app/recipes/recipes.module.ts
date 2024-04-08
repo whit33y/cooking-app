@@ -7,7 +7,6 @@ import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
 import { RecipeStartComponent } from './recipe-start/recipe-start.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AppRoutingModule } from '../app-routing.module';
 import { RecipesRoutingModule } from './recipes-routing.module';
 import { SharedModule } from '../shared/shared.module';
 
@@ -24,7 +23,6 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     RouterModule,
     ReactiveFormsModule,
-    AppRoutingModule,
     RecipesRoutingModule,
   ],
 })
