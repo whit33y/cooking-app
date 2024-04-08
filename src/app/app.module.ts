@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core.module';
+import { LoggingService } from './logging.service';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -16,7 +17,7 @@ import { CoreModule } from './core.module';
     SharedModule,
     CoreModule,
   ],
-
+  //providers: [LoggingService], //to samo jak Injectable provide loot
   bootstrap: [AppComponent],
 })
 export class AppModule {}
